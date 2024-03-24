@@ -1,0 +1,58 @@
+.div-head{
+    position: fixed;
+    width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo{
+width: 120px;
+margin-left: 10px;
+}
+.nav-burger{
+    width: 50px;
+    display: none;
+    margin-right: 20px;
+}
+.text-box{
+    display: flex;
+    font-size: 20px;
+    margin-right: 25px;
+}
+.text{
+margin-right: 13px;
+}
+
+@media (max-width: 650px){
+    .nav-burger{
+        display: block;
+    }
+
+    .div-head{
+       flex-wrap: wrap;
+       overflow: hidden;
+       height: 114px;
+       transition: all 0.3s linear;
+       
+    }
+
+    .text-box{
+        flex-wrap: wrap; 
+        width: 100%;
+        margin: 0;
+    }
+
+    .text{ width: 100%;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        border: 1px solid grey;
+        margin: 0;
+    }
+}
+.show-links{
+    height: 278px;
+    
+    transition: all 0.3s linear;
+    
+
+}
